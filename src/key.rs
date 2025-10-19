@@ -14,6 +14,8 @@ pub enum Hotkey {
     SkipKey,
     UndoKey,
     PauseKey,
+    SwitchComparisonPrevious,
+    SwitchComparisonNext,
     ToggleGlobalHotkeys,
 }
 
@@ -162,6 +164,8 @@ impl KeyState {
                         b"SkipKey" if in_profile => XmlExpect::Hotkey(Hotkey::SkipKey),
                         b"UndoKey" if in_profile => XmlExpect::Hotkey(Hotkey::UndoKey),
                         b"PauseKey" if in_profile => XmlExpect::Hotkey(Hotkey::PauseKey),
+                        b"SwitchComparisonPrevious" if in_profile => XmlExpect::Hotkey(Hotkey::SwitchComparisonPrevious),
+                        b"SwitchComparisonNext" if in_profile => XmlExpect::Hotkey(Hotkey::SwitchComparisonNext),
                         b"ToggleGlobalHotkeys" if in_profile => {
                             XmlExpect::Hotkey(Hotkey::ToggleGlobalHotkeys)
                         }
