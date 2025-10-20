@@ -1,4 +1,5 @@
 # livesplit-for-sober
+### What this does: Enables global hotkeys and fixes key duplication
 Forked from [live-split-hotkeys](https://github.com/descawed/live-split-hotkeys/tree/master) and merged pulls for fixes from [alexankitty](https://github.com/descawed/live-split-hotkeys/pull/4)
 
 This is NOT the official repository, and simply a fork. If you have anything relating to the live-split-hotkeys build, refer to the official repository stated earlier.
